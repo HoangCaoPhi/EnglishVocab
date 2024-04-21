@@ -16,7 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EnglishVocab.BussinessApi\EnglishVocab.BussinessApi.csproj" />
     <ProjectReference Include="..\EnglishVocab.Domain\EnglishVocab.Domain.csproj" />
   </ItemGroup>
 
