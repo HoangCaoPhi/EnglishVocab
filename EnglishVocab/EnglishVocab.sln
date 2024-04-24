@@ -19,7 +19,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnglishVocab.BussinessApi",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{54E74B29-3B9E-46DA-8BF0-7EA3AD5264FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnglishVocab.Appication.Tests", "EnglishVocab.Appication.Tests\EnglishVocab.Appication.Tests.csproj", "{4CF813B4-C76E-4F38-B715-2131181ECAB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnglishVocab.Appication.Tests", "EnglishVocab.Appication.Tests\EnglishVocab.Appication.Tests.csproj", "{4CF813B4-C76E-4F38-B715-2131181ECAB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnglishVocab.EmailWorker", "EnglishVocab.EmailWorker\EnglishVocab.EmailWorker.csproj", "{94B17BAA-0A5B-42B0-B9C5-786D5D0EA900}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnglishVocab.Queue.RabitMQ", "EnglishVocab.Queue.RabitMQ\EnglishVocab.Queue.RabitMQ.csproj", "{2BC5B58F-FD47-4AA6-8B3C-842B94E73591}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{B80F209C-03DC-486F-8EC0-DA3C6D209E81}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\DevOps\Env\mysql\docker-compose.yml = ..\..\..\DevOps\Env\mysql\docker-compose.yml
+		RabbitMQ.md = RabbitMQ.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +57,14 @@ Global
 		{4CF813B4-C76E-4F38-B715-2131181ECAB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CF813B4-C76E-4F38-B715-2131181ECAB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CF813B4-C76E-4F38-B715-2131181ECAB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94B17BAA-0A5B-42B0-B9C5-786D5D0EA900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94B17BAA-0A5B-42B0-B9C5-786D5D0EA900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94B17BAA-0A5B-42B0-B9C5-786D5D0EA900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94B17BAA-0A5B-42B0-B9C5-786D5D0EA900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BC5B58F-FD47-4AA6-8B3C-842B94E73591}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BC5B58F-FD47-4AA6-8B3C-842B94E73591}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BC5B58F-FD47-4AA6-8B3C-842B94E73591}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BC5B58F-FD47-4AA6-8B3C-842B94E73591}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +75,8 @@ Global
 		{EA35470B-181D-47A1-9866-C90DC18D4F11} = {32B54E53-549E-4515-8FE0-C76F796B4883}
 		{149BA5A4-39E2-4804-9B09-9ABB7BD613AE} = {412E021B-AC33-45B1-8355-55E82B3087CA}
 		{4CF813B4-C76E-4F38-B715-2131181ECAB9} = {54E74B29-3B9E-46DA-8BF0-7EA3AD5264FE}
+		{94B17BAA-0A5B-42B0-B9C5-786D5D0EA900} = {412E021B-AC33-45B1-8355-55E82B3087CA}
+		{2BC5B58F-FD47-4AA6-8B3C-842B94E73591} = {32B54E53-549E-4515-8FE0-C76F796B4883}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {185709A1-5D5E-406D-9074-BF5E9660FF28}
