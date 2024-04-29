@@ -1,10 +1,11 @@
 ﻿using EnglishVocab.Domain.Entities;
 using EnglishVocab.Domain.Interfaces;
+using EnglishVocab.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
 
 namespace EnglishVocab.Persistence.Repositories
 {
-    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : BaseEntity
+    public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : BaseEntityIdInt
     {
         private readonly ApplicationDbContext _dbContext;
         private readonly DbSet<TEntity> _dbSet;
@@ -29,11 +30,11 @@ namespace EnglishVocab.Persistence.Repositories
                 .ToListAsync();
         }
 
-        public async Task<TEntity> SaveAsync(TEntity entity)
+        public async Task<int> SaveAsync(TEntity entity)
         {
             await _dbSet.AddAsync(entity);
             await _dbContext.SaveChangesAsync();
-            return entity;
+            return entity.Id;
         }
 
         public async Task<bool> SaveListAsync(List<TEntity> entities)

@@ -2,13 +2,13 @@
 
 namespace EnglishVocab.Domain.Interfaces
 {
-    public interface IGenericRepository<TEntity> where TEntity : BaseEntity
+    public interface IGenericRepository<TEntity> where TEntity : BaseEntityIdInt
     {
         Task<TEntity> GetByIdAsync(int id);
 
         Task<IReadOnlyList<TEntity>> GetPagedReponseAsync(int pageNumber, int pageSize);
 
-        Task<TEntity> SaveAsync(TEntity entity);
+        Task<int> SaveAsync(TEntity entity);
 
         Task<bool> SaveListAsync(List<TEntity> entities);
 

@@ -30,4 +30,8 @@ nếu không nó sẽ gửi cho consumer khác nếu woker die.
 	+ fanout: nhận được bao nhiêu message gửi hết cho all queue nó biết.
 	+ relationship giữa exchange và queue gọi là binding.
 	+ direct : 1 messgae đi đến đúng key sao cho binding key khớp với router key.
-	+ 
+		+ không thể routing nhiều tiêu chí.
+
+	+ topic
+		+ định nghĩa router key bằng danh sách phân biệt dấu .
+		+ 

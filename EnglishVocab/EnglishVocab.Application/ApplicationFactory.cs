@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using EnglishVocab.Application.Interfaces;
+using EnglishVocab.Application.Producers;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace EnglishVocab.Application
 {
@@ -6,7 +8,7 @@ namespace EnglishVocab.Application
     {
         public static void InjectServices(this IServiceCollection services)
         {
-
+            services.AddTransient<IRemindLearnConfigProducers, RemindLearnConfigProducers>();
         }
 
         public static void InjectMediatR(this IServiceCollection services)

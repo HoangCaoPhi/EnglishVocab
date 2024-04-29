@@ -4,7 +4,7 @@ using EnglishVocab.Application.Models;
 
 namespace EnglishVocab.BussinessApi.Middleware
 {
-    public class CustomExceptionFilter
+    public class CustomExceptionFilter : IExceptionFilter
     {
         private readonly ILogger<CustomExceptionFilter> _logger;
 

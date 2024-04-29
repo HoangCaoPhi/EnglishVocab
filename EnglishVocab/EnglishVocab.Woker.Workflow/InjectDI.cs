@@ -1,17 +1,13 @@
-﻿using EnglishVocab.Domain.Interfaces;
-using EnglishVocab.Persistence.Contexts;
-using EnglishVocab.Persistence.Repositories;
+﻿using EnglishVocab.Persistence.Contexts;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace EnglishVocab.Persistence
 {
-    public static class PersistenceFactory
+    public static class InjectDI
     {
         public static void InjectServices(this IServiceCollection services)
         {
-            services.AddTransient<IGroupRepo, GroupRepo>();
+            
         }
 
         public static void InjectDbContext(this IServiceCollection services, IConfiguration configuration)
@@ -19,7 +15,7 @@ namespace EnglishVocab.Persistence
             var appConnection = configuration.GetConnectionString("AppDbConnectionString");
             if (appConnection != null)
             {
-                services.AddDbContext<ApplicationDbContext>(options =>
+                services.AddDbContext<ScheduleContext>(options =>
                             options.UseMySQL(appConnection));
             }
             else

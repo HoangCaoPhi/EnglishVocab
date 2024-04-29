@@ -1,7 +1,11 @@
 using Asp.Versioning;
+using EnglishVocab.Application;
 using EnglishVocab.Application.Models;
 using EnglishVocab.BussinessApi.Middleware;
+using EnglishVocab.Domain.Message;
 using EnglishVocab.Persistence;
+using EnglishVocab.Persistence.Contexts;
+using MassTransit;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Serialization;
 
@@ -37,10 +41,28 @@ builder.Services.AddApiVersioning(config =>
     config.ReportApiVersions = true;
 });
 
+builder.Services.AddMassTransit(x =>
+{    
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host("localhost", "rabbitmq", h => {
+            h.Username("guest");
+            h.Password("guest");
+        });
+    });
+});
+
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+ApplicationFactory.InjectMediatR(builder.Services);
+ApplicationFactory.InjectServices(builder.Services);
+
+PersistenceFactory.InjectDbContext(builder.Services, builder.Configuration);
+PersistenceFactory.InjectServices(builder.Services);
 
 var app = builder.Build();
 

@@ -1,12 +1,156 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.woker.workflow\\services\\notificationjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|solutionrelative:englishvocab.woker.workflow\\services\\notificationjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.woker.workflow\\services\\scheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|solutionrelative:englishvocab.woker.workflow\\services\\scheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.woker.workflow\\consumer\\dailyremindgroupconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|solutionrelative:englishvocab.woker.workflow\\consumer\\dailyremindgroupconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.woker.workflow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|solutionrelative:englishvocab.woker.workflow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA3D058E-8F21-456D-A715-B7FC1F64071F}|EnglishVocab.Application\\EnglishVocab.Application.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.application\\features\\groupfeat\\create\\groupcreatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA3D058E-8F21-456D-A715-B7FC1F64071F}|EnglishVocab.Application\\EnglishVocab.Application.csproj|solutionrelative:englishvocab.application\\features\\groupfeat\\create\\groupcreatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.woker.workflow\\englishvocab.woker.schedule.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|solutionrelative:englishvocab.woker.workflow\\englishvocab.woker.schedule.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.woker.workflow\\provider\\consolelogprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|solutionrelative:englishvocab.woker.workflow\\provider\\consolelogprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B80F209C-03DC-486F-8EC0-DA3C6D209E81}|Docs{B80F209C-03DC-486F-8EC0-DA3C6D209E81}|D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\Docs\\Quart.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{B80F209C-03DC-486F-8EC0-DA3C6D209E81}|Docs{B80F209C-03DC-486F-8EC0-DA3C6D209E81}|solutionrelative:Docs\\Quart.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GroupCreateCommand.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Application\\Features\\GroupFeat\\Create\\GroupCreateCommand.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Application\\Features\\GroupFeat\\Create\\GroupCreateCommand.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Application\\Features\\GroupFeat\\Create\\GroupCreateCommand.cs",
+              "RelativeToolTip": "EnglishVocab.Application\\Features\\GroupFeat\\Create\\GroupCreateCommand.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAswBgAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T12:10:00.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Program.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Woker.Workflow\\Program.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Program.cs",
+              "RelativeToolTip": "EnglishVocab.Woker.Workflow\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAYwCAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T00:25:28.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NotificationJob.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Services\\NotificationJob.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Woker.Workflow\\Services\\NotificationJob.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Services\\NotificationJob.cs",
+              "RelativeToolTip": "EnglishVocab.Woker.Workflow\\Services\\NotificationJob.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAUwBcAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T00:17:45.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ScheduleService.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Services\\ScheduleService.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Woker.Workflow\\Services\\ScheduleService.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Services\\ScheduleService.cs",
+              "RelativeToolTip": "EnglishVocab.Woker.Workflow\\Services\\ScheduleService.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T00:13:37.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DailyRemindGroupConsumer.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Consumer\\DailyRemindGroupConsumer.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Woker.Workflow\\Consumer\\DailyRemindGroupConsumer.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Consumer\\DailyRemindGroupConsumer.cs",
+              "RelativeToolTip": "EnglishVocab.Woker.Workflow\\Consumer\\DailyRemindGroupConsumer.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAIwAkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T17:34:24.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnglishVocab.Woker.Schedule",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj",
+              "RelativeDocumentMoniker": "EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj",
+              "RelativeToolTip": "EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-29T00:18:57.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConsoleLogProvider.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Provider\\ConsoleLogProvider.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Woker.Workflow\\Provider\\ConsoleLogProvider.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Provider\\ConsoleLogProvider.cs",
+              "RelativeToolTip": "EnglishVocab.Woker.Workflow\\Provider\\ConsoleLogProvider.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T00:19:10.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Quart.md",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\Docs\\Quart.md",
+              "RelativeDocumentMoniker": "Docs\\Quart.md",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\Docs\\Quart.md",
+              "RelativeToolTip": "Docs\\Quart.md",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-04-29T00:27:45.013Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,20 +1,17 @@
 ﻿using EnglishVocab.Domain.Entities;
+using EnglishVocab.Domain.Entities.Schedule;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
- 
+
 namespace EnglishVocab.Persistence.Contexts
 {
-    public class ApplicationDbContext : DbContext
+    public class ScheduleContext : DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        public ScheduleContext(DbContextOptions<ScheduleContext> options) : base(options)
         {
 
         }
 
-        // Register entities
-        public DbSet<Group> Groups { get; set; }
-
-        public DbSet<Word> Words { get; set; }
+        public DbSet<ScheduleExecution> Schedules { get; set; }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken))
         {
