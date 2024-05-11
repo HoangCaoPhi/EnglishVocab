@@ -2,7 +2,8 @@ using Asp.Versioning;
 using EnglishVocab.Application;
 using EnglishVocab.Application.Models;
 using EnglishVocab.BussinessApi.Middleware;
-using EnglishVocab.Domain.Message;
+using EnglishVocab.Identity;
+using EnglishVocab.Identity.Contexts;
 using EnglishVocab.Persistence;
 using EnglishVocab.Persistence.Contexts;
 using MassTransit;
@@ -42,10 +43,11 @@ builder.Services.AddApiVersioning(config =>
 });
 
 builder.Services.AddMassTransit(x =>
-{    
+{
     x.UsingRabbitMq((context, cfg) =>
     {
-        cfg.Host("localhost", "rabbitmq", h => {
+        cfg.Host("localhost", "rabbitmq", h =>
+        {
             h.Username("guest");
             h.Password("guest");
         });
@@ -58,11 +60,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-ApplicationFactory.InjectMediatR(builder.Services);
-ApplicationFactory.InjectServices(builder.Services);
+builder.Services.AddMediatRApp();
+builder.Services.AddApplicationService();
 
-PersistenceFactory.InjectDbContext(builder.Services, builder.Configuration);
-PersistenceFactory.InjectServices(builder.Services);
+builder.Services.AddPersistenceService();
+builder.Services.AddDbAppContext(builder.Configuration);
+builder.Services.AddMySqlIdentityInfrastructure(builder.Configuration);
+builder.Services.AddIndentityService();
 
 var app = builder.Build();
 
@@ -75,6 +79,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
@@ -82,8 +87,8 @@ app.MapControllers();
 // Applying Migrations
 using (var scope = app.Services.CreateScope())
 {
-    var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-    db.Database.Migrate();
+    var initializer = new ApplicationInitializer(scope.ServiceProvider);
+    await initializer.InitializeAsync();
 }
 
 app.Run();

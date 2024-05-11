@@ -8,8 +8,8 @@
 
   <ItemGroup>
     <Folder Include="Common\Helper\" />
-    <Folder Include="Dtos\Responses\" />
     <Folder Include="Dtos\Requests\" />
+    <Folder Include="Dtos\Responses\" />
     <Folder Include="Enums\" />
   </ItemGroup>
 

@@ -31,6 +31,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{B80F209C-0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnglishVocab.Woker.Schedule", "EnglishVocab.Woker.Workflow\EnglishVocab.Woker.Schedule.csproj", "{769CA184-C078-4C5D-88F7-63BC75AF1093}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnglishVocab.Identity", "EnglishVocab.Identity\EnglishVocab.Identity.csproj", "{7869CB0A-5312-4028-B0CC-9F5E457AD65D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnglishVocab.Shared", "EnglishVocab.Shared\EnglishVocab.Shared.csproj", "{2F047EDA-6387-41FF-9095-2004E5A9D00A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +65,14 @@ Global
 		{769CA184-C078-4C5D-88F7-63BC75AF1093}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{769CA184-C078-4C5D-88F7-63BC75AF1093}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{769CA184-C078-4C5D-88F7-63BC75AF1093}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7869CB0A-5312-4028-B0CC-9F5E457AD65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7869CB0A-5312-4028-B0CC-9F5E457AD65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7869CB0A-5312-4028-B0CC-9F5E457AD65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7869CB0A-5312-4028-B0CC-9F5E457AD65D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F047EDA-6387-41FF-9095-2004E5A9D00A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F047EDA-6387-41FF-9095-2004E5A9D00A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F047EDA-6387-41FF-9095-2004E5A9D00A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F047EDA-6387-41FF-9095-2004E5A9D00A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,6 +84,8 @@ Global
 		{149BA5A4-39E2-4804-9B09-9ABB7BD613AE} = {412E021B-AC33-45B1-8355-55E82B3087CA}
 		{4CF813B4-C76E-4F38-B715-2131181ECAB9} = {54E74B29-3B9E-46DA-8BF0-7EA3AD5264FE}
 		{769CA184-C078-4C5D-88F7-63BC75AF1093} = {32B54E53-549E-4515-8FE0-C76F796B4883}
+		{7869CB0A-5312-4028-B0CC-9F5E457AD65D} = {32B54E53-549E-4515-8FE0-C76F796B4883}
+		{2F047EDA-6387-41FF-9095-2004E5A9D00A} = {32B54E53-549E-4515-8FE0-C76F796B4883}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {185709A1-5D5E-406D-9074-BF5E9660FF28}

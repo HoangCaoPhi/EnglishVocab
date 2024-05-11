@@ -3,36 +3,56 @@
   "WorkspaceRootPath": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.woker.workflow\\services\\notificationjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|solutionrelative:englishvocab.woker.workflow\\services\\notificationjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{149BA5A4-39E2-4804-9B09-9ABB7BD613AE}|EnglishVocab.BussinessApi\\EnglishVocab.BussinessApi.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.bussinessapi\\controllers\\authencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{149BA5A4-39E2-4804-9B09-9ABB7BD613AE}|EnglishVocab.BussinessApi\\EnglishVocab.BussinessApi.csproj|solutionrelative:englishvocab.bussinessapi\\controllers\\authencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.woker.workflow\\services\\scheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|solutionrelative:englishvocab.woker.workflow\\services\\scheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7869CB0A-5312-4028-B0CC-9F5E457AD65D}|EnglishVocab.Identity\\EnglishVocab.Identity.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.identity\\services\\authenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7869CB0A-5312-4028-B0CC-9F5E457AD65D}|EnglishVocab.Identity\\EnglishVocab.Identity.csproj|solutionrelative:englishvocab.identity\\services\\authenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.woker.workflow\\consumer\\dailyremindgroupconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|solutionrelative:englishvocab.woker.workflow\\consumer\\dailyremindgroupconsumer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Migrations\\20240509152004_Update_Refresh_Token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EnglishVocab.Identity\\Migrations\\20240509152004_Update_Refresh_Token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.woker.workflow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|solutionrelative:englishvocab.woker.workflow\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7869CB0A-5312-4028-B0CC-9F5E457AD65D}|EnglishVocab.Identity\\EnglishVocab.Identity.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.identity\\dtos\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7869CB0A-5312-4028-B0CC-9F5E457AD65D}|EnglishVocab.Identity\\EnglishVocab.Identity.csproj|solutionrelative:englishvocab.identity\\dtos\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA3D058E-8F21-456D-A715-B7FC1F64071F}|EnglishVocab.Application\\EnglishVocab.Application.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.application\\features\\groupfeat\\create\\groupcreatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA3D058E-8F21-456D-A715-B7FC1F64071F}|EnglishVocab.Application\\EnglishVocab.Application.csproj|solutionrelative:englishvocab.application\\features\\groupfeat\\create\\groupcreatecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7869CB0A-5312-4028-B0CC-9F5E457AD65D}|EnglishVocab.Identity\\EnglishVocab.Identity.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.identity\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7869CB0A-5312-4028-B0CC-9F5E457AD65D}|EnglishVocab.Identity\\EnglishVocab.Identity.csproj|solutionrelative:englishvocab.identity\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.woker.workflow\\englishvocab.woker.schedule.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|solutionrelative:englishvocab.woker.workflow\\englishvocab.woker.schedule.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7869CB0A-5312-4028-B0CC-9F5E457AD65D}|EnglishVocab.Identity\\EnglishVocab.Identity.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.identity\\contexts\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7869CB0A-5312-4028-B0CC-9F5E457AD65D}|EnglishVocab.Identity\\EnglishVocab.Identity.csproj|solutionrelative:englishvocab.identity\\contexts\\identitycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.woker.workflow\\provider\\consolelogprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{769CA184-C078-4C5D-88F7-63BC75AF1093}|EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj|solutionrelative:englishvocab.woker.workflow\\provider\\consolelogprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7869CB0A-5312-4028-B0CC-9F5E457AD65D}|EnglishVocab.Identity\\EnglishVocab.Identity.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.identity\\migrations\\20240509143831_add_refresh_token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7869CB0A-5312-4028-B0CC-9F5E457AD65D}|EnglishVocab.Identity\\EnglishVocab.Identity.csproj|solutionrelative:englishvocab.identity\\migrations\\20240509143831_add_refresh_token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B80F209C-03DC-486F-8EC0-DA3C6D209E81}|Docs{B80F209C-03DC-486F-8EC0-DA3C6D209E81}|D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\Docs\\Quart.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{B80F209C-03DC-486F-8EC0-DA3C6D209E81}|Docs{B80F209C-03DC-486F-8EC0-DA3C6D209E81}|solutionrelative:Docs\\Quart.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{149BA5A4-39E2-4804-9B09-9ABB7BD613AE}|EnglishVocab.BussinessApi\\EnglishVocab.BussinessApi.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.bussinessapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{149BA5A4-39E2-4804-9B09-9ABB7BD613AE}|EnglishVocab.BussinessApi\\EnglishVocab.BussinessApi.csproj|solutionrelative:englishvocab.bussinessapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7869CB0A-5312-4028-B0CC-9F5E457AD65D}|EnglishVocab.Identity\\EnglishVocab.Identity.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.identity\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7869CB0A-5312-4028-B0CC-9F5E457AD65D}|EnglishVocab.Identity\\EnglishVocab.Identity.csproj|solutionrelative:englishvocab.identity\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149BA5A4-39E2-4804-9B09-9ABB7BD613AE}|EnglishVocab.BussinessApi\\EnglishVocab.BussinessApi.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.bussinessapi\\initializer\\applicationinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{149BA5A4-39E2-4804-9B09-9ABB7BD613AE}|EnglishVocab.BussinessApi\\EnglishVocab.BussinessApi.csproj|solutionrelative:englishvocab.bussinessapi\\initializer\\applicationinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7869CB0A-5312-4028-B0CC-9F5E457AD65D}|EnglishVocab.Identity\\EnglishVocab.Identity.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.identity\\interfaces\\iauthenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7869CB0A-5312-4028-B0CC-9F5E457AD65D}|EnglishVocab.Identity\\EnglishVocab.Identity.csproj|solutionrelative:englishvocab.identity\\interfaces\\iauthenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Migrations\\20240509143740_Add_Refresh_Token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EnglishVocab.Identity\\Migrations\\20240509143740_Add_Refresh_Token.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25AEA243-CB9D-4138-A17E-B3691D4CE9D6}|EnglishVocab.Domain\\EnglishVocab.Domain.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.domain\\options\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25AEA243-CB9D-4138-A17E-B3691D4CE9D6}|EnglishVocab.Domain\\EnglishVocab.Domain.csproj|solutionrelative:englishvocab.domain\\options\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +62,175 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GroupCreateCommand.cs",
-              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Application\\Features\\GroupFeat\\Create\\GroupCreateCommand.cs",
-              "RelativeDocumentMoniker": "EnglishVocab.Application\\Features\\GroupFeat\\Create\\GroupCreateCommand.cs",
-              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Application\\Features\\GroupFeat\\Create\\GroupCreateCommand.cs",
-              "RelativeToolTip": "EnglishVocab.Application\\Features\\GroupFeat\\Create\\GroupCreateCommand.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAswBgAAAA1AAAA",
+              "DocumentIndex": 2,
+              "Title": "20240509152004_Update_Refresh_Token.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Migrations\\20240509152004_Update_Refresh_Token.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Identity\\Migrations\\20240509152004_Update_Refresh_Token.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Migrations\\20240509152004_Update_Refresh_Token.cs",
+              "RelativeToolTip": "EnglishVocab.Identity\\Migrations\\20240509152004_Update_Refresh_Token.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAYwEEAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T12:10:00.188Z",
+              "WhenOpened": "2024-05-09T15:20:04.408Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Program.cs",
-              "RelativeDocumentMoniker": "EnglishVocab.Woker.Workflow\\Program.cs",
-              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Program.cs",
-              "RelativeToolTip": "EnglishVocab.Woker.Workflow\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAYwCAAAAADAAAA",
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Dtos\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Identity\\Dtos\\RefreshToken.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Dtos\\RefreshToken.cs",
+              "RelativeToolTip": "EnglishVocab.Identity\\Dtos\\RefreshToken.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAwAgAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T00:25:28.493Z",
+              "WhenOpened": "2024-05-09T15:19:23.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NotificationJob.cs",
-              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Services\\NotificationJob.cs",
-              "RelativeDocumentMoniker": "EnglishVocab.Woker.Workflow\\Services\\NotificationJob.cs",
-              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Services\\NotificationJob.cs",
-              "RelativeToolTip": "EnglishVocab.Woker.Workflow\\Services\\NotificationJob.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAUwBcAAABUAAAA",
+              "DocumentIndex": 4,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Identity\\Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "EnglishVocab.Identity\\Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T00:17:45.167Z",
+              "WhenOpened": "2024-05-09T15:12:39.586Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ScheduleService.cs",
-              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Services\\ScheduleService.cs",
-              "RelativeDocumentMoniker": "EnglishVocab.Woker.Workflow\\Services\\ScheduleService.cs",
-              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Services\\ScheduleService.cs",
-              "RelativeToolTip": "EnglishVocab.Woker.Workflow\\Services\\ScheduleService.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAQwCgAAAAAAAAA",
+              "Title": "AuthenService.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Services\\AuthenService.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Identity\\Services\\AuthenService.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Services\\AuthenService.cs",
+              "RelativeToolTip": "EnglishVocab.Identity\\Services\\AuthenService.cs",
+              "ViewState": "AQIAAM4AAAAAAAAAAAD4v0IAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T00:13:37.389Z",
+              "WhenOpened": "2024-05-09T14:44:32.845Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DailyRemindGroupConsumer.cs",
-              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Consumer\\DailyRemindGroupConsumer.cs",
-              "RelativeDocumentMoniker": "EnglishVocab.Woker.Workflow\\Consumer\\DailyRemindGroupConsumer.cs",
-              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Consumer\\DailyRemindGroupConsumer.cs",
-              "RelativeToolTip": "EnglishVocab.Woker.Workflow\\Consumer\\DailyRemindGroupConsumer.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAIwAkAAAAIAAAA",
+              "DocumentIndex": 10,
+              "Title": "IAuthenService.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Interfaces\\IAuthenService.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Identity\\Interfaces\\IAuthenService.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Interfaces\\IAuthenService.cs",
+              "RelativeToolTip": "EnglishVocab.Identity\\Interfaces\\IAuthenService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T17:34:24.363Z",
+              "WhenOpened": "2024-05-09T14:43:52.161Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EnglishVocab.Woker.Schedule",
-              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj",
-              "RelativeDocumentMoniker": "EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj",
-              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj",
-              "RelativeToolTip": "EnglishVocab.Woker.Workflow\\EnglishVocab.Woker.Schedule.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-04-29T00:18:57.409Z",
+              "DocumentIndex": 0,
+              "Title": "AuthenController.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.BussinessApi\\Controllers\\AuthenController.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.BussinessApi\\Controllers\\AuthenController.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.BussinessApi\\Controllers\\AuthenController.cs",
+              "RelativeToolTip": "EnglishVocab.BussinessApi\\Controllers\\AuthenController.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAcwCIAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:39:29.232Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ConsoleLogProvider.cs",
-              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Provider\\ConsoleLogProvider.cs",
-              "RelativeDocumentMoniker": "EnglishVocab.Woker.Workflow\\Provider\\ConsoleLogProvider.cs",
-              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Woker.Workflow\\Provider\\ConsoleLogProvider.cs",
-              "RelativeToolTip": "EnglishVocab.Woker.Workflow\\Provider\\ConsoleLogProvider.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAARAAAA",
+              "Title": "20240509143831_Add_Refresh_Token.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Migrations\\20240509143831_Add_Refresh_Token.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Identity\\Migrations\\20240509143831_Add_Refresh_Token.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Migrations\\20240509143831_Add_Refresh_Token.cs",
+              "RelativeToolTip": "EnglishVocab.Identity\\Migrations\\20240509143831_Add_Refresh_Token.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwAQAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T00:19:10.885Z",
+              "WhenOpened": "2024-05-09T14:38:31.686Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Quart.md",
-              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\Docs\\Quart.md",
-              "RelativeDocumentMoniker": "Docs\\Quart.md",
-              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\Docs\\Quart.md",
-              "RelativeToolTip": "Docs\\Quart.md",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-04-29T00:27:45.013Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.BussinessApi\\Program.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.BussinessApi\\Program.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.BussinessApi\\Program.cs",
+              "RelativeToolTip": "EnglishVocab.BussinessApi\\Program.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAADgv0YAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:25:30.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IdentityContext.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Contexts\\IdentityContext.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Identity\\Contexts\\IdentityContext.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Contexts\\IdentityContext.cs",
+              "RelativeToolTip": "EnglishVocab.Identity\\Contexts\\IdentityContext.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAmwBEAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:28:01.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationInitializer.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.BussinessApi\\Initializer\\ApplicationInitializer.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.BussinessApi\\Initializer\\ApplicationInitializer.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.BussinessApi\\Initializer\\ApplicationInitializer.cs",
+              "RelativeToolTip": "EnglishVocab.BussinessApi\\Initializer\\ApplicationInitializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T15:01:43.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Identity\\ServiceExtensions.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\ServiceExtensions.cs",
+              "RelativeToolTip": "EnglishVocab.Identity\\ServiceExtensions.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAADgvzgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:35:36.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20240509143740_Add_Refresh_Token.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Migrations\\20240509143740_Add_Refresh_Token.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Identity\\Migrations\\20240509143740_Add_Refresh_Token.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\Migrations\\20240509143740_Add_Refresh_Token.cs",
+              "RelativeToolTip": "EnglishVocab.Identity\\Migrations\\20240509143740_Add_Refresh_Token.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:37:40.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "JWTSettings.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Domain\\Options\\JWTSettings.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Domain\\Options\\JWTSettings.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Domain\\Options\\JWTSettings.cs",
+              "RelativeToolTip": "EnglishVocab.Domain\\Options\\JWTSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T14:37:18.989Z",
               "EditorCaption": ""
             }
           ]
