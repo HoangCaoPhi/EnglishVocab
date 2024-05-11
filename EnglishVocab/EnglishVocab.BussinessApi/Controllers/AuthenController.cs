@@ -2,7 +2,7 @@
 using EnglishVocab.Application.Models;
 using EnglishVocab.Identity.Dtos.Requests.Authen;
 using EnglishVocab.Identity.Interfaces;
-using EnglishVocab.Shared.Wrappers;
+using EnglishVocab.Identity.Utils;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EnglishVocab.BussinessApi.Controllers
@@ -21,18 +21,12 @@ namespace EnglishVocab.BussinessApi.Controllers
             return Ok(await _authenService.RegisterAsync(request, origin));
         }
 
-        private string GenerateIPAddress()
-        {
-            if (Request.Headers.ContainsKey("X-Forwarded-For"))
-                return Request.Headers["X-Forwarded-For"];
-            else
-                return HttpContext.Connection.RemoteIpAddress.MapToIPv4().ToString();
-        }
-
+ 
         [HttpPost("authenticate")]
         public async Task<IActionResult> AuthenticateAsync(LoginRequest request)
         {
-            return Ok(await _authenService.LoginAsync(request, GenerateIPAddress()));
+            var ip = IdentityUtils.GenerateIPAddress(HttpContext);
+            return Ok(await _authenService.LoginAsync(request, ip));
         }
 
         [HttpPost("logout")]

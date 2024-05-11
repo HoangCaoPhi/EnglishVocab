@@ -1,0 +1,37 @@
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 24px;
+
+  overflow: hidden;
+  background-image: url('./../../assets/back-ground-authen.jpg');
+  background-size: cover;
+
+  .si-wrap {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    background-color: white;
+    
+    .si-title {
+   
+    }
+
+    .si-form {
+      .si-name-user {
+        display: flex;
+      }
+    }
+  }
+}

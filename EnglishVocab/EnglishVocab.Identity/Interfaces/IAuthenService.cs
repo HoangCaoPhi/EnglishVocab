@@ -3,8 +3,8 @@ using EnglishVocab.Identity.Dtos.Responses.Authen;
 using EnglishVocab.Shared.Wrappers;
 using Microsoft.AspNetCore.Identity;
 
-
 namespace EnglishVocab.Identity.Interfaces;
+
 public interface IAuthenService
 {
     Task<Response<LoginReponse>> LoginAsync(LoginRequest request, string ipAddress);

@@ -66,6 +66,7 @@ public static class ServiceExtensions
         var jwtOptions = configuration.GetSection(JWTOptions.Name).Get<JWTOptions>();
         RsaSecurityKey rsaSecurityKey = null;
         TokenValidationParameters tokenValidationParameters = null;
+
         if (File.Exists(jwtOptions.PrivatekeyPath))
         {
             var rsaKey = RSA.Create();

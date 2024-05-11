@@ -6,6 +6,7 @@ using EnglishVocab.Identity.Dtos.Requests.Authen;
 using EnglishVocab.Identity.Dtos.Responses.Authen;
 using EnglishVocab.Identity.Interfaces;
 using EnglishVocab.Identity.Models;
+using EnglishVocab.Identity.Utils;
 using EnglishVocab.Shared.Exceptions;
 using EnglishVocab.Shared.Wrappers;
 using Microsoft.AspNetCore.Identity;
@@ -15,8 +16,6 @@ using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using System.Data;
 using System.IdentityModel.Tokens.Jwt;
-using System.Net;
-using System.Net.Sockets;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
@@ -36,63 +35,59 @@ public class AuthenService(UserManager<ApplicationUser> userManager,
 
     public async Task<Response<LoginReponse>> LoginAsync(LoginRequest request, string ipAddress)
     {
-        var user = await _userManager.FindByEmailAsync(request.Email);
-        if (user == null)
-        {
-            throw new ApiException($"No Accounts Registered with {request.Email}.");
-        }
+        var user = await _userManager.FindByEmailAsync(request.Email) ?? 
+                  throw new ApiException($"No Accounts Registered with {request.Email}.");
+
         var result = await _signInManager.PasswordSignInAsync(user.UserName, request.Password, false, lockoutOnFailure: false);
         if (!result.Succeeded)
         {
             throw new ApiException($"Invalid Credentials for '{request.Email}'.");
         }
-        //if (!user.EmailConfirmed)
-        //{
-        //    throw new ApiException($"Account Not Confirmed for '{request.Email}'.");
-        //}
-
+ 
         JwtSecurityToken jwtSecurityToken = await GenerateJWToken(user);
-        LoginReponse response = new LoginReponse();
-        response.Id = user.Id;
-        response.JWToken = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
-        response.Email = user.Email;
-        response.UserName = user.UserName;
+
+        LoginReponse response = new ()
+        {
+            Id = user.Id,
+            JWToken = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken),
+            Email = user.Email,
+            UserName = user.UserName
+        };
+
         var rolesList = await _userManager.GetRolesAsync(user).ConfigureAwait(false);
         response.Roles = rolesList.ToList();
+
         response.IsVerified = user.EmailConfirmed;
+
         var refreshToken = await GenerateRefreshToken(ipAddress, user);
         response.RefreshToken = refreshToken.Token;
 
         return new Response<LoginReponse>(response, $"Authenticated {user.UserName}");
     }
 
-    class RolePermission
-    {
-        public string resource { get; set; }
-        public string[] action { get; set; }
-    }
+
 
     private async Task<string> GetPermissionOfRole(string roleName)
     {
         var role = await _roleManager.FindByNameAsync(roleName);
         var roleClaimsForRole = _context.RoleClaims.Where(rc => rc.RoleId == role.Id).ToList();
-        List<RolePermission> rolePermissions = new List<RolePermission>();
+        List<RolePermission> rolePermissions = new();
+
         foreach (var item in roleClaimsForRole)
         {
             rolePermissions.Add(new RolePermission
             {
-                resource = item.ClaimType,
-                action = item.ClaimValue.Split("#")
+                Resource = item.ClaimType,
+                Action = item.ClaimValue.Split("#")
             });
         }
 
         return JsonConvert.SerializeObject(
-        new
-        {
-            role = roleName,
-            permissions = rolePermissions
-
-        });
+                new
+                {
+                    Role = roleName,
+                    Permissions = rolePermissions
+                });
     }
 
     private async Task<JwtSecurityToken> GenerateJWToken(ApplicationUser user)
@@ -107,7 +102,7 @@ public class AuthenService(UserManager<ApplicationUser> userManager,
             roleClaims.Add(new Claim("roles", await GetPermissionOfRole(roles[i].ToString())));
         }
 
-        string ipAddress = GetIpAddress();
+        string ipAddress = IdentityUtils.GetIpAddress();
 
         var claims = new[]
         {
@@ -117,7 +112,7 @@ public class AuthenService(UserManager<ApplicationUser> userManager,
                 new Claim("fullname", user.FirstName + " " + user.LastName),
                 new Claim("uid", user.Id),
                 new Claim("ip", ipAddress)
-            }
+        }
         .Union(userClaims)
         .Union(roleClaims);
 
@@ -137,18 +132,7 @@ public class AuthenService(UserManager<ApplicationUser> userManager,
         return GenerateJwtSecurityToken(claims, signingCredentials);
     }
 
-    public static string GetIpAddress()
-    {
-        var host = Dns.GetHostEntry(Dns.GetHostName());
-        foreach (var ip in host.AddressList)
-        {
-            if (ip.AddressFamily == AddressFamily.InterNetwork)
-            {
-                return ip.ToString();
-            }
-        }
-        return string.Empty;
-    }
+
 
     private RsaSecurityKey GenerateRsaKey()
     {
@@ -224,18 +208,13 @@ public class AuthenService(UserManager<ApplicationUser> userManager,
         using var rngCryptoServiceProvider = new RNGCryptoServiceProvider();
         var randomBytes = new byte[40];
         rngCryptoServiceProvider.GetBytes(randomBytes);
-        // convert random bytes to hex string
         return BitConverter.ToString(randomBytes).Replace("-", "");
     }
  
-
     public async Task<RefreshTokenDto> RefreshToken(RefreshTokenDto refreshToken, string ipAddress)
     {
-        var principal = GetPrincipalFromExpiredToken(refreshToken.AccessToken);
-        if (principal == null)
-        {
-            throw new SecurityTokenException("Invalid token");
-        }
+        var principal = GetPrincipalFromExpiredToken(refreshToken.AccessToken) ?? throw new SecurityTokenException("Invalid token");
+
         var uid = principal.FindFirst("uid")?.Value;
         var user = await _userManager
             .Users.Include(x => x.RefreshTokens
@@ -272,10 +251,10 @@ public class AuthenService(UserManager<ApplicationUser> userManager,
         };
 
         var tokenHandler = new JwtSecurityTokenHandler();
-        SecurityToken securityToken;
-        var principal = tokenHandler.ValidateToken(token, tokenValidationParameters, out securityToken);
-        var jwtSecurityToken = securityToken as JwtSecurityToken;
-        if (jwtSecurityToken == null || !jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256, StringComparison.InvariantCultureIgnoreCase))
+
+        var principal = tokenHandler.ValidateToken(token, tokenValidationParameters, out SecurityToken securityToken);
+
+        if (securityToken is not JwtSecurityToken jwtSecurityToken || !jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256, StringComparison.InvariantCultureIgnoreCase))
             throw new SecurityTokenException("Invalid token");
 
         return principal;
