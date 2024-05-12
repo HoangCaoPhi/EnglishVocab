@@ -3,21 +3,14 @@ using EnglishVocab.Application;
 using EnglishVocab.Application.Models;
 using EnglishVocab.BussinessApi.Middleware;
 using EnglishVocab.Identity;
-using EnglishVocab.Identity.Contexts;
 using EnglishVocab.Persistence;
-using EnglishVocab.Persistence.Contexts;
 using MassTransit;
-using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers(op =>
-{
-    op.Filters.Add(typeof(CustomExceptionFilter));
-});
 
 // Add Newston Json Config
 builder.Services.AddControllersWithViews()
@@ -77,12 +70,15 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseMiddleware<CustomExceptionFilter>();
 
+app.UseHttpsRedirection();
+app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
-
 app.MapControllers();
+
+
 
 // Applying Migrations
 using (var scope = app.Services.CreateScope())

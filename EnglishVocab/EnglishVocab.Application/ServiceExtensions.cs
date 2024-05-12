@@ -1,6 +1,7 @@
 ﻿using EnglishVocab.Application.Interfaces;
 using EnglishVocab.Application.Producers;
 using Microsoft.Extensions.DependencyInjection;
+using System.Reflection;
 
 namespace EnglishVocab.Application
 {
@@ -13,7 +14,7 @@ namespace EnglishVocab.Application
 
         public static void AddMediatRApp(this IServiceCollection services)
         {
-            services.AddMediatR(cf => cf.RegisterServicesFromAssembly(typeof(ServiceExtensions).Assembly));
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
         }
     }
 }

@@ -1,5 +1,4 @@
 ﻿using EnglishVocab.Domain.Enums;
-using EnglishVocab.Domain.Options;
 using EnglishVocab.Identity.Contexts;
 using EnglishVocab.Identity.Dtos;
 using EnglishVocab.Identity.Dtos.Requests.Authen;
@@ -11,29 +10,28 @@ using EnglishVocab.Shared.Exceptions;
 using EnglishVocab.Shared.Wrappers;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
 using System.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using System.Security.Cryptography;
-using System.Text;
 
 namespace EnglishVocab.Identity.Services;
 public class AuthenService(UserManager<ApplicationUser> userManager,
     SignInManager<ApplicationUser> signInManager,
     RoleManager<IdentityRole> roleManager,
     IdentityContext context,
-    IOptions<JWTOptions> jwtOption) : IAuthenService
+    IJwtTokenService jwtTokenService) : IAuthenService
 {
     private readonly UserManager<ApplicationUser> _userManager = userManager;
     private readonly SignInManager<ApplicationUser> _signInManager = signInManager;
-    private readonly JWTOptions _jwtOptions = jwtOption.Value;
     private readonly RoleManager<IdentityRole> _roleManager = roleManager;
+
+    private readonly IJwtTokenService _jwtTokenService = jwtTokenService;
+
     private readonly IdentityContext _context = context; 
 
-    public async Task<Response<LoginReponse>> LoginAsync(LoginRequest request, string ipAddress)
+    public async Task<ServiceResponse<LoginReponse>> LoginAsync(LoginRequest request, string ipAddress)
     {
         var user = await _userManager.FindByEmailAsync(request.Email) ?? 
                   throw new ApiException($"No Accounts Registered with {request.Email}.");
@@ -44,25 +42,23 @@ public class AuthenService(UserManager<ApplicationUser> userManager,
             throw new ApiException($"Invalid Credentials for '{request.Email}'.");
         }
  
-        JwtSecurityToken jwtSecurityToken = await GenerateJWToken(user);
-
         LoginReponse response = new ()
         {
             Id = user.Id,
-            JWToken = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken),
+            JWToken = await GenerateJWToken(user),
             Email = user.Email,
             UserName = user.UserName
         };
 
         var rolesList = await _userManager.GetRolesAsync(user).ConfigureAwait(false);
-        response.Roles = rolesList.ToList();
+        response.Roles = [.. rolesList];
 
         response.IsVerified = user.EmailConfirmed;
 
         var refreshToken = await GenerateRefreshToken(ipAddress, user);
         response.RefreshToken = refreshToken.Token;
 
-        return new Response<LoginReponse>(response, $"Authenticated {user.UserName}");
+        return new ServiceResponse<LoginReponse>(response, $"Authenticated {user.UserName}");
     }
 
 
@@ -90,7 +86,7 @@ public class AuthenService(UserManager<ApplicationUser> userManager,
                 });
     }
 
-    private async Task<JwtSecurityToken> GenerateJWToken(ApplicationUser user)
+    private async Task<string> GenerateJWToken(ApplicationUser user)
     {
         var userClaims = await _userManager.GetClaimsAsync(user);
         var roles = await _userManager.GetRolesAsync(user);
@@ -116,46 +112,11 @@ public class AuthenService(UserManager<ApplicationUser> userManager,
         .Union(userClaims)
         .Union(roleClaims);
 
-        SigningCredentials signingCredentials;
-        if (File.Exists(_jwtOptions.PrivatekeyPath))
-        {
-            RsaSecurityKey rsaSecurityKey = GenerateRsaKey();
-            signingCredentials = new SigningCredentials(rsaSecurityKey, SecurityAlgorithms.RsaSha256);
-            Console.WriteLine(signingCredentials.ToString());
-        }
-        else
-        {
-            var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtOptions.Key));
-            signingCredentials = new SigningCredentials(symmetricSecurityKey, SecurityAlgorithms.HmacSha256);
-        }
-
-        return GenerateJwtSecurityToken(claims, signingCredentials);
+        return _jwtTokenService.GenerateAccessToken(claims);
     }
 
 
-
-    private RsaSecurityKey GenerateRsaKey()
-    {
-        var rsaKey = RSA.Create();
-        string xmlKey = File.ReadAllText(_jwtOptions.PrivatekeyPath);
-        rsaKey.FromXmlString(xmlKey);
-        var rsaSecurityKey = new RsaSecurityKey(rsaKey);
-
-        return rsaSecurityKey;
-    }
-
-    private JwtSecurityToken GenerateJwtSecurityToken(IEnumerable<Claim> claims, SigningCredentials signingCredentials)
-    {
-        return new JwtSecurityToken(
-            issuer: _jwtOptions.Issuer,
-            audience: _jwtOptions.Audience,
-            claims: claims,
-            expires: DateTime.UtcNow.AddMinutes(_jwtOptions.DurationInMinutes),
-            signingCredentials: signingCredentials);
-    }
-
-
-    public async Task<Response<IdentityResult>> RegisterAsync(RegisterRequest request, string origin)
+    public async Task<ServiceResponse<IdentityResult>> RegisterAsync(RegisterRequest request, string origin)
     {
         var userWithSameUserName = await _userManager.FindByNameAsync(request.UserName);
         if (userWithSameUserName != null)
@@ -176,7 +137,7 @@ public class AuthenService(UserManager<ApplicationUser> userManager,
             if (result.Succeeded)
             {
                 await _userManager.AddToRoleAsync(user, Roles.Basic.ToString());
-                return new Response<IdentityResult>(result);
+                return new ServiceResponse<IdentityResult>(result);
             }
             else
             {
@@ -193,7 +154,7 @@ public class AuthenService(UserManager<ApplicationUser> userManager,
     {
         var refreshToken = new RefreshToken
         {
-            Token = RandomTokenString(),
+            Token = _jwtTokenService.GenerateRefreshToken(),
             Expires = DateTime.UtcNow.AddDays(7),
             Created = DateTime.UtcNow,
             CreatedByIp = ipAddress            
@@ -203,17 +164,9 @@ public class AuthenService(UserManager<ApplicationUser> userManager,
         return refreshToken;
     }
 
-    private string RandomTokenString()
-    {
-        using var rngCryptoServiceProvider = new RNGCryptoServiceProvider();
-        var randomBytes = new byte[40];
-        rngCryptoServiceProvider.GetBytes(randomBytes);
-        return BitConverter.ToString(randomBytes).Replace("-", "");
-    }
- 
     public async Task<RefreshTokenDto> RefreshToken(RefreshTokenDto refreshToken, string ipAddress)
     {
-        var principal = GetPrincipalFromExpiredToken(refreshToken.AccessToken) ?? throw new SecurityTokenException("Invalid token");
+        var principal = _jwtTokenService.GetPricipalFromExpiredToken(refreshToken.AccessToken) ?? throw new SecurityTokenException("Invalid token");
 
         var uid = principal.FindFirst("uid")?.Value;
         var user = await _userManager
@@ -224,39 +177,18 @@ public class AuthenService(UserManager<ApplicationUser> userManager,
                 && t.CreatedByIp == ipAddress
             ))
         .FirstAsync(x => x.Id == uid);
+
         if (user.RefreshTokens.Count > 0)
         {
-            JwtSecurityToken jwtSecurityToken = await GenerateJWToken(user);
+            var jwtSecurityToken = await GenerateJWToken(user);
             var newRefreshToken = await GenerateRefreshToken(ipAddress, user);
             return new RefreshTokenDto()
             {
-                AccessToken = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken),
+                AccessToken = jwtSecurityToken,
                 RefreshToken = newRefreshToken.Token
             };
         }
+
         throw new SecurityTokenException("Invalid token");
-    }
-
-    private ClaimsPrincipal GetPrincipalFromExpiredToken(string token)
-    {
-        var tokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateAudience = true,
-            ValidateIssuer = true,
-            ValidateIssuerSigningKey = true,
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtOptions.Key)),
-            ValidateLifetime = false,
-            ValidIssuer = _jwtOptions.Issuer,
-            ValidAudience = _jwtOptions.Audience
-        };
-
-        var tokenHandler = new JwtSecurityTokenHandler();
-
-        var principal = tokenHandler.ValidateToken(token, tokenValidationParameters, out SecurityToken securityToken);
-
-        if (securityToken is not JwtSecurityToken jwtSecurityToken || !jwtSecurityToken.Header.Alg.Equals(SecurityAlgorithms.HmacSha256, StringComparison.InvariantCultureIgnoreCase))
-            throw new SecurityTokenException("Invalid token");
-
-        return principal;
     }
 }

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EnglishVocab.Domain.Entities
 {
-    public class Word : BaseEntityIdInt
+    public class Word : BaseEntity<int>
     {
         [MaxLength(255)]
         [Required]

@@ -20,19 +20,19 @@ namespace EnglishVocab.Persistence.Contexts
         {
             var entries = ChangeTracker
              .Entries()
-             .Where(e => e.Entity is BaseEntityIdInt && (
+             .Where(e => e.Entity is BaseEntity<int> && (
                      e.State == EntityState.Added
                      || e.State == EntityState.Modified));
 
             foreach (var entityEntry in entries)
             {
-                ((BaseEntityIdInt)entityEntry.Entity).ModifiedDate = DateTime.Now;
-                ((BaseEntityIdInt)entityEntry.Entity).ModifiedBy = "hcphi";
+                ((BaseEntity<int>)entityEntry.Entity).ModifiedDate = DateTime.Now;
+                ((BaseEntity<int>)entityEntry.Entity).ModifiedBy = "hcphi";
 
                 if (entityEntry.State == EntityState.Added)
                 {
-                    ((BaseEntityIdInt)entityEntry.Entity).CreatedDate = DateTime.Now;
-                    ((BaseEntityIdInt)entityEntry.Entity).CreatedBy = "hcphi";
+                    ((BaseEntity<int>)entityEntry.Entity).CreatedDate = DateTime.Now;
+                    ((BaseEntity<int>)entityEntry.Entity).CreatedBy = "hcphi";
                 }
             }
 

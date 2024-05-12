@@ -1,21 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using EnglishVocab.Application.Enums;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EnglishVocab.Domain.Entities
 {
-    public class BaseEntityIdInt : BaseEntity
+    public class BaseEntity<T>
     {
         [Key]
-        public int Id { get; set; }
-    }
+        public T Id { get; set; }
 
-    public class BaseEntityIdGuid : BaseEntity
-    {
-        public Guid Id { get; set; }
-    }
-
-    public class BaseEntity
-    {
-        public int Id { get; set; }
         public DateTime? CreatedDate { get; set; }
 
         public DateTime? ModifiedDate { get; set; }
@@ -23,5 +16,20 @@ namespace EnglishVocab.Domain.Entities
         public string? CreatedBy { get; set; }
 
         public string? ModifiedBy { get; set; }
-}
+
+        public bool?  IsDeleted { get; set; }
+
+        [NotMapped]
+        public ModelState ModelState { get; set; }
+
+        private Type _type;
+        public Type GetEntityType()
+        {
+            if (_type == null)
+            {
+                _type = this.GetType();
+            }
+            return _type;
+        }
+    }
 }

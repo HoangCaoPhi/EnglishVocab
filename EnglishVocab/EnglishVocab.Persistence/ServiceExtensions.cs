@@ -12,6 +12,7 @@ namespace EnglishVocab.Persistence
         public static void AddPersistenceService(this IServiceCollection services)
         {
             services.AddTransient<IGroupRepo, GroupRepo>();
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
         }
 
         public static void AddDbAppContext(this IServiceCollection services, IConfiguration configuration)

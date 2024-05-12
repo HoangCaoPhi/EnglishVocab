@@ -2,7 +2,7 @@
 
 namespace EnglishVocab.Domain.Entities.Schedule
 {
-    public class ScheduleExecution : BaseEntityIdInt
+    public class ScheduleExecution : BaseEntity<int>
     {
         public ActionRun ActionRun { get; set; }
 

@@ -1,5 +1,5 @@
 ﻿using Asp.Versioning;
-using EnglishVocab.Application.Models;
+using EnglishVocab.Identity.Dtos;
 using EnglishVocab.Identity.Dtos.Requests.Authen;
 using EnglishVocab.Identity.Interfaces;
 using EnglishVocab.Identity.Utils;
@@ -17,7 +17,7 @@ namespace EnglishVocab.BussinessApi.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> SignUp(RegisterRequest request)
         {
-            var origin = Request.Headers["origin"];
+            var origin = Request.Headers.Origin;
             return Ok(await _authenService.RegisterAsync(request, origin));
         }
 
@@ -29,10 +29,11 @@ namespace EnglishVocab.BussinessApi.Controllers
             return Ok(await _authenService.LoginAsync(request, ip));
         }
 
-        [HttpPost("logout")]
-        public async Task<ServiceResponse> SignOut()
+        [HttpPost("refresh-token")]
+        public async Task<IActionResult> SignOut(RefreshTokenDto refreshToken)
         {
-            return null;
+            var ip = IdentityUtils.GenerateIPAddress(HttpContext);
+            return Ok(await _authenService.RefreshToken(refreshToken, ip));
         }
     }
 }

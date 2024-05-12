@@ -1,32 +1,20 @@
 ﻿using Asp.Versioning;
 using EnglishVocab.Application.Features.GroupFeat.Create;
-using EnglishVocab.Application.Models;
 using EnglishVocab.Domain.Entities;
-using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EnglishVocab.BussinessApi.Controllers
 {
-    [ApiController]
+    [Authorize]
     [ApiVersion("1.0")]
-    [Route("api/v{v:apiVersion}/Group")]
-    public class GroupController : Controller
-    {
-        private readonly IMediator _mediator;
-        public GroupController(IMediator mediator)
-        {
-            _mediator = mediator;
-        }
- 
+    public class GroupController() : BaseController
+    {        
         [HttpPost("")]
-        public async Task<ServiceResponse> SaveGroup(Group group)
+        public async Task<IActionResult> SaveGroup(Group group)
         {
-            var data = await _mediator.Send(new GroupCreateCommand()
-            {
-                Group = group
-            });
-
-            return new ServiceResponse(data);
+            var data = await Mediator.Send(new GroupCreateCommand { Group = group });
+            return Ok(data);
         }
     }
 }

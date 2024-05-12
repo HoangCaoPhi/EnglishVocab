@@ -2,7 +2,7 @@
 
 namespace EnglishVocab.Domain.Interfaces
 {
-    public interface IGenericRepository<TEntity> where TEntity : BaseEntityIdInt
+    public interface IGenericRepository<TEntity> : IGenericRepositoryWrap where TEntity : BaseEntity<int>
     {
         Task<TEntity> GetByIdAsync(int id);
 

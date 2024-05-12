@@ -1,12 +1,122 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{149BA5A4-39E2-4804-9B09-9ABB7BD613AE}|EnglishVocab.BussinessApi\\EnglishVocab.BussinessApi.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.bussinessapi\\controllers\\authencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{149BA5A4-39E2-4804-9B09-9ABB7BD613AE}|EnglishVocab.BussinessApi\\EnglishVocab.BussinessApi.csproj|solutionrelative:englishvocab.bussinessapi\\controllers\\authencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7869CB0A-5312-4028-B0CC-9F5E457AD65D}|EnglishVocab.Identity\\EnglishVocab.Identity.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.identity\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7869CB0A-5312-4028-B0CC-9F5E457AD65D}|EnglishVocab.Identity\\EnglishVocab.Identity.csproj|solutionrelative:englishvocab.identity\\serviceextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149BA5A4-39E2-4804-9B09-9ABB7BD613AE}|EnglishVocab.BussinessApi\\EnglishVocab.BussinessApi.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.bussinessapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{149BA5A4-39E2-4804-9B09-9ABB7BD613AE}|EnglishVocab.BussinessApi\\EnglishVocab.BussinessApi.csproj|solutionrelative:englishvocab.bussinessapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149BA5A4-39E2-4804-9B09-9ABB7BD613AE}|EnglishVocab.BussinessApi\\EnglishVocab.BussinessApi.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.bussinessapi\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{149BA5A4-39E2-4804-9B09-9ABB7BD613AE}|EnglishVocab.BussinessApi\\EnglishVocab.BussinessApi.csproj|solutionrelative:englishvocab.bussinessapi\\controllers\\groupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F047EDA-6387-41FF-9095-2004E5A9D00A}|EnglishVocab.Shared\\EnglishVocab.Shared.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.shared\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F047EDA-6387-41FF-9095-2004E5A9D00A}|EnglishVocab.Shared\\EnglishVocab.Shared.csproj|solutionrelative:englishvocab.shared\\exceptions\\validationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{149BA5A4-39E2-4804-9B09-9ABB7BD613AE}|EnglishVocab.BussinessApi\\EnglishVocab.BussinessApi.csproj|d:\\001_t\u1ED5ng h\u1EE3p\\l\u1EADp tr\u00ECnh\\d\u1EF1 \u00E1n english vocab\\englishvocab\\englishvocab\\englishvocab.bussinessapi\\middleware\\customexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{149BA5A4-39E2-4804-9B09-9ABB7BD613AE}|EnglishVocab.BussinessApi\\EnglishVocab.BussinessApi.csproj|solutionrelative:englishvocab.bussinessapi\\middleware\\customexceptionfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthenController.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.BussinessApi\\Controllers\\AuthenController.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.BussinessApi\\Controllers\\AuthenController.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.BussinessApi\\Controllers\\AuthenController.cs",
+              "RelativeToolTip": "EnglishVocab.BussinessApi\\Controllers\\AuthenController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T02:43:30.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GroupController.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.BussinessApi\\Controllers\\GroupController.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.BussinessApi\\Controllers\\GroupController.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.BussinessApi\\Controllers\\GroupController.cs",
+              "RelativeToolTip": "EnglishVocab.BussinessApi\\Controllers\\GroupController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T02:43:30.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServiceExtensions.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\ServiceExtensions.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Identity\\ServiceExtensions.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Identity\\ServiceExtensions.cs",
+              "RelativeToolTip": "EnglishVocab.Identity\\ServiceExtensions.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAgwGgAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T02:43:30.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.BussinessApi\\Program.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.BussinessApi\\Program.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.BussinessApi\\Program.cs",
+              "RelativeToolTip": "EnglishVocab.BussinessApi\\Program.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAEsAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T02:42:38.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ValidationException.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Shared\\Exceptions\\ValidationException.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.Shared\\Exceptions\\ValidationException.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.Shared\\Exceptions\\ValidationException.cs",
+              "RelativeToolTip": "EnglishVocab.Shared\\Exceptions\\ValidationException.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T02:41:06.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomExceptionFilter.cs",
+              "DocumentMoniker": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.BussinessApi\\Middleware\\CustomExceptionFilter.cs",
+              "RelativeDocumentMoniker": "EnglishVocab.BussinessApi\\Middleware\\CustomExceptionFilter.cs",
+              "ToolTip": "D:\\001_T\u1ED5ng h\u1EE3p\\L\u1EADp tr\u00ECnh\\D\u1EF1 \u00E1n English Vocab\\EnglishVocab\\EnglishVocab\\EnglishVocab.BussinessApi\\Middleware\\CustomExceptionFilter.cs",
+              "RelativeToolTip": "EnglishVocab.BussinessApi\\Middleware\\CustomExceptionFilter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAwwAcAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T01:35:38.743Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

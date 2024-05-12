@@ -1,31 +1,27 @@
 ﻿using EnglishVocab.Application.Interfaces;
 using EnglishVocab.Domain.Entities;
 using EnglishVocab.Domain.Interfaces;
+using EnglishVocab.Shared.Wrappers;
 using MediatR;
 
 namespace EnglishVocab.Application.Features.GroupFeat.Create
 {
-    public class GroupCreateCommand : IRequest<int>
+    public class GroupCreateCommand : IRequest<ServiceResponse<int>>
     {
-        public Group Group { get; set; }
+        public required Group Group { get; set; }
 
-        public class GroupCreateCommandHandler : IRequestHandler<GroupCreateCommand, int>
+        public class GroupCreateCommandHandler(IGroupRepo groupRepo,
+            IRemindLearnConfigProducers remind) : IRequestHandler<GroupCreateCommand, ServiceResponse<int>>
         {
-            private readonly IGroupRepo _groupRepo;
-            private readonly IRemindLearnConfigProducers _remind;
+            private readonly IGroupRepo _groupRepo = groupRepo;
+            private readonly IRemindLearnConfigProducers _remind = remind;
 
-            public GroupCreateCommandHandler(IGroupRepo groupRepo,
-                IRemindLearnConfigProducers remind)
-            {
-                _groupRepo = groupRepo;
-                _remind = remind;
-            }
-            public async Task<int> Handle(GroupCreateCommand request, CancellationToken cancellationToken)
+            public async Task<ServiceResponse<int>> Handle(GroupCreateCommand request, CancellationToken cancellationToken)
             {
                 var id = await _groupRepo.CreateAsync(request.Group);
                 await _remind.SendReminderConfig(request.Group);
 
-                return id;
+                return new ServiceResponse<int>(id);
             }
         }
     }

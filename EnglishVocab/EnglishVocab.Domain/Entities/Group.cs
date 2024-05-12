@@ -2,7 +2,7 @@
 
 namespace EnglishVocab.Domain.Entities
 {
-    public class Group : BaseEntityIdInt
+    public class Group : BaseEntity<int>
     {
         [MaxLength(500)]
         public string GroupName { get; set; }

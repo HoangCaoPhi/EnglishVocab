@@ -4,7 +4,6 @@ using EnglishVocab.Identity.Interfaces;
 using EnglishVocab.Identity.Models;
 using EnglishVocab.Identity.Services;
 using EnglishVocab.Shared.Wrappers;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -32,26 +31,26 @@ public static class ServiceExtensions
 
         services.Configure<JWTOptions>(configuration.GetSection("JWTSettings"));
 
-        services.Configure<IdentityOptions>(options =>
-        {
-            // Password settings.
-            options.Password.RequireDigit = true;
-            options.Password.RequireLowercase = true;
-            options.Password.RequireNonAlphanumeric = true;
-            options.Password.RequireUppercase = true;
-            options.Password.RequiredLength = 6;
-            options.Password.RequiredUniqueChars = 1;
+        //services.Configure<IdentityOptions>(options =>
+        //{
+        //    // Password settings.
+        //    options.Password.RequireDigit = true;
+        //    options.Password.RequireLowercase = true;
+        //    options.Password.RequireNonAlphanumeric = true;
+        //    options.Password.RequireUppercase = true;
+        //    options.Password.RequiredLength = 6;
+        //    options.Password.RequiredUniqueChars = 1;
 
-            // Lockout settings.
-            options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
-            options.Lockout.MaxFailedAccessAttempts = 5;
-            options.Lockout.AllowedForNewUsers = true;
+        //    // Lockout settings.
+        //    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+        //    options.Lockout.MaxFailedAccessAttempts = 5;
+        //    options.Lockout.AllowedForNewUsers = true;
 
-            // User settings.
-            options.User.AllowedUserNameCharacters =
-            "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
-            options.User.RequireUniqueEmail = false;
-        });
+        //    // User settings.
+        //    options.User.AllowedUserNameCharacters =
+        //    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
+        //    options.User.RequireUniqueEmail = false;
+        //});
 
         services.AddJwtAuthentication(configuration);
     }
@@ -59,6 +58,7 @@ public static class ServiceExtensions
     public static void AddIndentityService(this IServiceCollection services)
     {
         services.AddTransient<IAuthenService, AuthenService>();
+        services.AddTransient<IJwtTokenService, JwtTokenService>();
     }
 
     public static void AddJwtAuthentication(this IServiceCollection services, IConfiguration configuration)
@@ -77,7 +77,7 @@ public static class ServiceExtensions
         }
         else
         {
-            var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.Key));
+            var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(JWTOptions.SecretKey));
             tokenValidationParameters = GetTokenValidationParameters(jwtOptions, symmetricSecurityKey);
         }
 
@@ -89,30 +89,27 @@ public static class ServiceExtensions
         .AddJwtBearer(o =>
         {
             o.RequireHttpsMetadata = false;
-            o.SaveToken = true;
+            o.SaveToken = false;
             o.TokenValidationParameters = tokenValidationParameters;
             o.Events = new JwtBearerEvents()
             {
-                OnAuthenticationFailed = c =>
+                OnAuthenticationFailed = context =>
                 {
-                    c.Fail("Unauthorized");
-                    c.Response.StatusCode = 401;
-                    c.Response.ContentType = "application/json";
-                    return c.Response.WriteAsync(c.Exception.ToString());
+                    var errorResult = JsonConvert.SerializeObject(new ServiceResponse<string>("Unauthorized: " + context.Exception.ToString()));
+                    context.Response.WriteAsync(errorResult);
+                    context.Fail("Unauthorized");  
+                    return Task.CompletedTask;
                 },
                 OnChallenge = context =>
                 {
-                    context.HandleResponse();
-                    context.Response.StatusCode = 401;
-                    context.Response.ContentType = "application/json";
-                    var result = JsonConvert.SerializeObject(new Response<string>("You are not Authorized"));
-                    return context.Response.WriteAsync(result);
+                    context.HandleResponse(); 
+                    var result = JsonConvert.SerializeObject(new ServiceResponse<string>("You are not Authorized"));
+                    context.Response.WriteAsync(result);
+                    return Task.CompletedTask;
                 },
                 OnForbidden = context =>
                 {
-                    context.Response.StatusCode = 403;
-                    context.Response.ContentType = "application/json";
-                    var result = JsonConvert.SerializeObject(new Response<string>("You are not authorized to access this resource"));
+                    var result = JsonConvert.SerializeObject(new ServiceResponse<string>("You are not authorized to access this resource"));
                     return context.Response.WriteAsync(result);
                 },
             };
