@@ -1,4 +1,5 @@
-﻿using EnglishVocab.Domain.Interfaces;
+﻿using EnglishVocab.Application.Interfaces.Repos;
+using EnglishVocab.Domain.Interfaces;
 using EnglishVocab.Persistence.Contexts;
 using EnglishVocab.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +13,7 @@ namespace EnglishVocab.Persistence
         public static void AddPersistenceService(this IServiceCollection services)
         {
             services.AddTransient<IGroupRepo, GroupRepo>();
+            services.AddTransient<IWordRepo, WordRepo>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
         }
 

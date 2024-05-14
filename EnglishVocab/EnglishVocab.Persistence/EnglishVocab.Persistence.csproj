@@ -16,11 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EnglishVocab.Domain\EnglishVocab.Domain.csproj" />
+    <Folder Include="Options\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Options\" />
+    <ProjectReference Include="..\EnglishVocab.Application\EnglishVocab.Application.csproj" />
   </ItemGroup>
 
 </Project>

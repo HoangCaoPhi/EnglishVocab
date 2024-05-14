@@ -1,7 +1,9 @@
 ﻿using EnglishVocab.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
- 
+using Microsoft.EntityFrameworkCore.Query;
+using System.Linq.Expressions;
+
 namespace EnglishVocab.Persistence.Contexts
 {
     public class ApplicationDbContext : DbContext
@@ -16,6 +18,7 @@ namespace EnglishVocab.Persistence.Contexts
 
         public DbSet<Word> Words { get; set; }
 
+ 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default(CancellationToken))
         {
             var entries = ChangeTracker
@@ -35,7 +38,7 @@ namespace EnglishVocab.Persistence.Contexts
                     ((BaseEntity<int>)entityEntry.Entity).CreatedBy = "hcphi";
                 }
             }
-
+ 
             return base.SaveChangesAsync();
         }
     }

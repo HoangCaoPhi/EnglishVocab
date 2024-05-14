@@ -83,8 +83,32 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
          return await GetByIdAsync(id);
     }
 
-    public virtual void UpdateFieldEntityWrap(BaseEntity<int> existingEntity, BaseEntity<int> entity)
+    public void UpdateFieldEntityWrap(BaseEntity<int> existingEntity, BaseEntity<int> entity)
     {
-        
+        UpdateFieldEntity((TEntity)existingEntity, (TEntity)entity);
+    }
+
+    protected virtual void UpdateFieldEntity(TEntity existingEntity, TEntity entity) { }
+
+    public void SetForeignKeyWrap(BaseEntity<int> entity, int id)
+    {
+        SetForeignKey((TEntity)entity, id);
+    }
+
+    protected virtual void SetForeignKey(TEntity entity, int id) { }
+
+    public async Task AddEntity(BaseEntity<int> entity)
+    {
+        await _dbSet.AddAsync((TEntity)entity);
+    }
+
+    public void ChangeStateUpdateWrap(BaseEntity<int> entity)
+    {
+        ChangeState((TEntity)entity);
+    }
+
+    public void ChangeState(TEntity entity)
+    {
+        _dbContext.Entry(entity).State = EntityState.Modified;
     }
 }
